@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Outfit', serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.header{
+    background-color:hsl(217, 54%, 11%);
+    margin: 35px;
+    padding: 35px;
+    box-shadow: 0 1rem 3rem hsl(215, 51%, 70%);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background-color:hsl(216, 50%, 16%);
+    width: 470px;
+    /* Width = width of card-image + 2 * padding */
+    padding: 35px;
+    border-radius: 15px;
+}
+
+.card-image{
+    width: 400px;
+    border-radius: 15px;
+}
+
+.card-name{
+    margin: 20px 0;
+    color:white;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.card-paragraph, .creation{
+    color: hsl(215, 51%, 70%);
+}
+
+.cost-info{
+    margin: 15px 0;
+    display: flex;
+}
+
+.cost{
+    margin-left: 10px;
+    color:hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+
+.time-left{
+    margin-left: 10px;
+    color: hsl(215, 51%, 70%);
+    font-weight: 400;
+}
+
+.clock-icon{
+    margin-left: auto;
+}
+
+.separator{
+    margin: 20px 0;
+    width: 400px;
+    height: 1px;
+    background-color:hsl(215, 32%, 27%);
+}
+
+.creator-info{
+    display: flex;
+    align-items: center;
+}
+
+.creator-image{
+    width: 60px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-right: 20px;
+}
+
+.name{
+    color: white;
+    margin-left: 5px;
+    font-weight: 400;
+}
+
+@media (max-width: 670px) {
+    *{
+        font-size: 15px;
+    }
+    .header{
+        margin: 15px;
+        padding: 20px;
+    }
+    .card{
+        width: 70vw;
+        padding: 20px; 
+    }
+    .card-image, .separator{
+        width: calc(70vw - 40px);
+    }
+    .card-name{
+        font-size: 18px;
+    }
+    .creator-image{
+        width: 50px;
+    }
+    .creation, .name{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 375px) {
+    *{
+        font-size: 13px;
+    }
+
+    .cost, .time-left{
+        margin-left: 5px;
+    }
+}
