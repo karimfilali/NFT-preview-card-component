@@ -10,17 +10,14 @@
     font-family: 'Outfit', serif;
     font-size: 18px;
     font-weight: 300;
+    
 }
 
-.header{
+body{
     background-color:hsl(217, 54%, 11%);
-    margin: 35px;
-    padding: 35px;
-    box-shadow: 0 1rem 3rem hsl(215, 51%, 70%);
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
 }
 
 .card{
@@ -31,9 +28,23 @@
     border-radius: 15px;
 }
 
+.img-wrapper{
+    position: relative;
+}
+
 .card-image{
     width: 400px;
     border-radius: 15px;
+    cursor: pointer;
+}
+
+.view{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
 }
 
 .card-name{
